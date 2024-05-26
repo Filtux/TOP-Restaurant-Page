@@ -12,10 +12,3 @@ img.alt = 'Hero-image';
 img.className = 'hero-image';
 
 heroContainer.appendChild(img);
-
-const informationImage = document.createElement('img');
-informationImage.src = bodyImage;
-informationImage.alt = 'Information-image';
-informationImage.className = 'information-image';
-
-informationContainer.appendChild(informationImage);
