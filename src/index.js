@@ -1,6 +1,5 @@
 import './styles.css';
 import heroImage from './hero_img.jpg';
-import bodyImage from './Double-Double-Cheeseburger-with-Fries-Recipe-scaled.jpg';
 
 // Assuming you have a div with class 'hero-container' in your HTML
 const heroContainer = document.querySelector('.hero-container');
