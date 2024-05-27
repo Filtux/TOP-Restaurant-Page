@@ -107,15 +107,13 @@ nav button:hover {
     padding: 1rem 25%;
 }
 
-/* Footer styling */
-
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: #343a40;
     color: #fff;
-    padding: 0.5rem 1rem; /* Reduced padding */
-    align-items: center; /* Center items vertically */
+    padding: 0.5rem 1rem;
+    align-items: center;
     grid-column: 1 / -1;
     margin-top: auto;
     height: 100%;
@@ -148,14 +146,13 @@ nav button:hover {
 }
 
 .footer-author p {
-    margin: 0; /* Ensure no margin on the paragraph */
-    padding: 0; /* Ensure no padding on the paragraph */
+    margin: 0;
+    padding: 0;
     font-size: 0.875rem;
     line-height: 1;
-    height: auto; /* Ensure it only takes the height it needs */
+    height: auto;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;

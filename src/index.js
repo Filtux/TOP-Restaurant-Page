@@ -1,13 +1,20 @@
 import './styles.css';
-import heroImage from './hero_img.jpg';
+import { generateIndexHTML } from './index_html';
+import { generateMenuHTML } from './menu_html';
+import { generateAboutHTML } from './about_html';
 
-// Assuming you have a div with class 'hero-container' in your HTML
-const heroContainer = document.querySelector('.hero-container');
-const informationContainer = document.querySelector('.information-container');
+document.addEventListener('DOMContentLoaded', () => {
 
-const img = document.createElement('img');
-img.src = heroImage;
-img.alt = 'Hero-image';
-img.className = 'hero-image';
+    generateIndexHTML();
+});
 
-heroContainer.appendChild(img);
+const homeButton = document.querySelector(('.nav-home'));
+const menuButton = document.querySelector(('.nav-menu'));
+const aboutButton = document.querySelector(('.nav-about'));
+
+homeButton.addEventListener('click', generateIndexHTML);
+
+menuButton.addEventListener('click', generateMenuHTML);
+
+aboutButton.addEventListener('click', generateAboutHTML);
+
