@@ -1,0 +1,7 @@
+.main-container {
+    grid-template-rows: 1fr auto;
+}
+
+.information-container {
+    grid-template-rows: auto;
+}

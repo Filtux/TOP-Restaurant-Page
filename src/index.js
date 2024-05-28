@@ -1,4 +1,4 @@
-import './styles.css';
+import './styles/index.css';
 import { generateIndexHTML } from './index_html';
 import { generateMenuHTML } from './menu_html';
 import { generateAboutHTML } from './about_html';

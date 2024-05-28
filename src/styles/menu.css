@@ -1,0 +1,9 @@
+.information-container {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.menu-item-card {
+    background-color: black;
+    padding: 20px;
+}

@@ -1,3 +1,4 @@
+import './styles/about.css';
 import heroImage from './Burger_img_3.jpg'
 
 export function generateAboutHTML() {
@@ -10,17 +11,20 @@ export function generateAboutHTML() {
 
     const heroTitle = document.createElement('h1');
     heroTitle.classList.add('hero-title');
-    heroTitle.textContent = "Joe's Burger Bistro";
+    heroTitle.textContent = "About";
 
     const informationContainer = document.createElement('div');
     informationContainer.classList.add('information-container');
 
-    const informationParagraph = document.createElement('p');
-    informationParagraph.classList.add('information-paragraph');
-    informationParagraph.textContent = "Built from the idea that great taste is one of life's greatest pleasures,we emphasise on huge flavours in all of our recipes. All of our dishes are made with love, and these juicy burgers and sauces will drive you crazy for wanting more";
+    const informationParagraph1 = document.createElement('p');
+    informationParagraph1.classList.add('information-paragraph');
+    informationParagraph1.textContent = "We're glad that you're curious, there are no secrets here. "
+    informationParagraph1.textContent += "With an eye for taste and a mouth for adventure, we're nested "
+    informationParagraph1.textContent += "in the heart of Mergenville, a special little place we call home.";
 
-    const informationOrder = document.createElement('h2');
-    informationOrder.classList.add('information-order');
+    const informationParagraph2 = document.createElement('p');
+    informationParagraph2.classList.add('information-paragraph');
+    informationParagraph2.textContent = "For any queries or orders, contact us directly on 0422457823 to see how we can help"
 
     const orderLink = document.createElement('a');
     orderLink.href = '#';
@@ -31,9 +35,8 @@ export function generateAboutHTML() {
     img.alt = 'Hero-image';
     img.className = 'hero-image';
 
-    informationOrder.appendChild(orderLink);
-    informationContainer.appendChild(informationParagraph);
-    informationContainer.appendChild(informationOrder);
+    informationContainer.appendChild(informationParagraph1);
+    informationContainer.appendChild(informationParagraph2);
     heroContainer.appendChild(heroTitle);
     heroContainer.appendChild(informationContainer);
     heroContainer.appendChild(img);
